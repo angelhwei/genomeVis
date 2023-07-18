@@ -1,0 +1,36 @@
+.geneViewFrame{
+    background-color:#fff;
+    width: 1120px;
+    height:500px;
+    display: inline-block;
+}
+#content1,#content2{
+    padding: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    height:480px;
+    overflow-y: auto;
+}
+  /* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+.mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 500px;
+  height: 100px;
+  background-color: #fff; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* .tooltip {
+  background-color: #29b99f;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+} */
+
+.tooltip{
+  pointer-events: none;
+}
