@@ -138,6 +138,12 @@ const chromosomeBtn = function () {
                         tooltip.transition().duration(200).style('opacity', 0)
                         d3.select(this).style('stroke', 'none').style('stroke-width', '0')
                     })
+                    .on('click', function (d) {
+                        d3.select('#chr_name').text(d.chromosome)
+                        d3.select('#content2').text('') // Clear the content
+                        // d3.select("#content2").remove();
+                        mutationView(squareWidth, compressionNum, d.chromosome) // Update the content with the selected bar's data
+                    })
 
                 svg.selectAll('mycircle')
                     .data(data)
@@ -420,7 +426,7 @@ const mutationView = function (squareWidth, compressionNum, scaffold) {
                             muX = 0
                         }
                         //
-                        // Problem 
+                        // Problem
                         if (muRadius / 2 < 5) {
                             // if radius is smaller than 5 then change the radius to 10
                             muRadius = data2[i].MuValues * muSize * (10 * 0.5)
@@ -610,22 +616,24 @@ function drawCircle(svg, x, y, radius, c, opacity, details) {
 // Square size and compression ratio
 const squareContainer = document.getElementById('content2')
 const squareSizeInput = document.getElementById('square-size-input')
-const updateSquaresBtn = document.getElementById('update-squares-btn')
+// const updateSquaresBtn = document.getElementById('update-squares-btn')
 const compressionInput = document.getElementById('compression-input')
 const updateCompressionBtn = document.getElementById('update-compression-btn')
 
 let squareSize = squareSizeInput.value
 let compressionDegree = compressionInput.value
 
-updateSquaresBtn.addEventListener('click', updateSquares)
+// updateSquaresBtn.addEventListener('click', updateSquares)
 
-function updateSquares() {
-    squareSize = Number(squareSizeInput.value)
-    renderSquares()
-}
+// function updateSquares() {
+//     squareSize = Number(squareSizeInput.value)
+//     renderSquares()
+// }
+
 updateCompressionBtn.addEventListener('click', updateCompression)
 
 function updateCompression() {
+    squareSize = Number(squareSizeInput.value)
     compressionDegree = Number(compressionInput.value)
     renderSquares()
 }
