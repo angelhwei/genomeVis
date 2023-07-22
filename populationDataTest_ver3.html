@@ -13,7 +13,6 @@
             integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
             crossorigin="anonymous"
         />
-        
     </head>
     <body>
         <!-- <div class="geneViewFrame"> -->
@@ -28,65 +27,17 @@
         </nav>
 
         <div class="container mt-5">
-            <div class="container text-center">
-                <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000000" /> Scafold 0
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000001" /> Scafold 1
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000002" /> Scafold 2
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000003" /> Scafold 3
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000004" /> Scafold 4
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000005" /> Scafold 5
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000006" /> Scafold 6
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000007" /> Scafold 7
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000008" /> Scafold 8
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000009" /> Scafold 9
-                    </label>
-                    <label class="scafoldBtn btn btn-outline-info">
-                        <input type="radio" name="options" id="Sc0000010" /> Scafold 10
-                    </label>
-                </div> -->
-
-                <!-- <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000000">Scafold 0</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000001">Scafold 1</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000002">Scafold 2</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000003">Scafold 3</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000004">Scafold 4</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000005">Scafold 5</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000006">Scafold 6</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000007">Scafold 7</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000008">Scafold 8</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000009">Scafold 9</button>
-                <button type="button" class="scafoldBtn btn btn-outline-info" id="Sc0000010">Scafold 10</button> -->
-            </div>
+            <div class="container text-center"></div>
 
             <div class="border rounded ml-md-3 my-3">
-              <div id="my_dataviz"></div>
+                <div id="my_dataviz"></div>
             </div>
-            
+
             <div class="ml-md-3 my-3">
                 <span class="h4">Scaffold: </span><span class="h4" id="chr_name"></span>
             </div>
 
-            <div class=" border rounded ml-md-3 my-3">
+            <div class="border rounded ml-md-3 my-3">
                 <div class="content2" id="content2"></div>
             </div>
 
@@ -102,11 +53,11 @@
                         aria-label="Square Size"
                         aria-describedby="button-addon2"
                     />
-                    <div class="input-group-append">
+                    <!-- <div class="input-group-append">
                         <button class="btn btn-info" type="button" id="update-squares-btn">
                             Update Squares
                         </button>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="input-group mb-3 ml-md-3" style="width: 18rem" id="compression">
                     <input
@@ -119,16 +70,15 @@
                         aria-label="Square Compression"
                         aria-describedby="button-addon2"
                     />
-                    <div class="input-group-append">
-                        <button class="btn btn-info" type="button" id="update-compression-btn">
-                            Update Compression
-                        </button>
-                    </div>
+                </div>
+                <div class="ml-3">
+                    <button class="btn btn-info" type="button" id="update-compression-btn">
+                        Update
+                    </button>
                 </div>
             </div>
         </div>
         <script src="https://d3js.org/d3.v4.js"></script>
         <script src="populationDataTest_ver3.js"></script>
-        
     </body>
 </html>
